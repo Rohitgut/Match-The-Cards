@@ -153,7 +153,7 @@
 			
 		}
  		.over{
- 			margin: 20px;
+ 			margin: 8px;
  			background-color: grey;
 			border: 2px solid black;
  			color: black;
@@ -237,6 +237,7 @@
 				width: 23%;
   				height: 18%;
   				box-shadow: 5px 2px 4px grey;
+				border: none;
 			}
 			.left{
 				margin: 0;
