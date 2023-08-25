@@ -53,8 +53,19 @@
       			
       			button.play();
 
-      			document.body.innerHTML=' <body><div><h2>Match The Cards</h2><a href="matchcard.html"><i class="fa-solid fa-user" style="color: #000000;"></i>&nbsp &nbsp &nbsp<i class="fa-regular fa-circle-play "></i>&nbsp &nbsp &nbsp<i class="fa-regular fa-user" style="color: #000000;"></i></a><a href="matchcard2.html"><i class="fa-solid fa-user" style="color: #000000;"></i>&nbsp &nbsp &nbsp<i class="fa-regular fa-circle-play"></i>&nbsp &nbsp<i class="fa-solid fa-robot" style="color: #000000;"></i></a></div></body>';
-      		
+      			var xhttp = new XMLHttpRequest();
+  				xhttp.onreadystatechange = function() {
+    				if (this.readyState == 4 && this.status == 200) {
+      					document.body.innerHTML = this.responseText;
+
+      					var script = document.createElement("script");
+                    			script.src = "choice.js";
+                    			document.head.appendChild(script);
+    				}
+  				};
+  				xhttp.open("GET", "choice.html", true);
+  				xhttp.send();
+   		
       	});
       	
       </script>
