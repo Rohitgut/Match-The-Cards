@@ -268,7 +268,7 @@
 			#player{
 				position: absolute;
 				z-index: -1;
-				top: 20%;
+				top: 21%;
     				left: 50%;
     				transform: translate(-50%, -50%);
     				text-shadow: none;
